@@ -142,7 +142,7 @@ main {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 701px) {
     .header {
         margin-left: var(--navbar-width);
     }
@@ -167,7 +167,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .navbar {
         bottom: 0;
         width: 100vw;
