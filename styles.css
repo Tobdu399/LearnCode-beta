@@ -15,6 +15,10 @@
     --body-bg: #313140;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--text-color);
     background-color: var(--body-bg);
@@ -36,8 +40,7 @@ body::-webkit-scrollbar-thumb {
 
 .header {
     text-align: center;
-    background-image: linear-gradient(to top, rgba(76, 76, 76, 0.52),
-                        rgba(0, 0, 0, 0.73)),url("background.jpg");
+    background-image: linear-gradient(to bottom, rgba(11, 11, 26, 0.74), rgba(49, 49, 64, 0.74)), url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px var(--bg-primary) solid;
@@ -47,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 .header h1, .header p {
     margin: 0;
     font-family: 'Roboto Mono', 'sans-serif';
-    background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }
 
@@ -142,7 +144,7 @@ main {
 
 
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 751px) {
     .header {
         margin-left: var(--navbar-width);
     }
@@ -167,7 +169,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .navbar {
         bottom: 0;
         width: 100vw;
