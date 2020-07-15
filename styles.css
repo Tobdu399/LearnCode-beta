@@ -19,6 +19,15 @@
     scroll-behavior: smooth;
 }
 
+.pictures img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 5px;
+
+    box-shadow: 3px 3px 5px 3px rgba(191,172,191,1);
+}
+
 body {
     color: var(--text-color);
     background-color: var(--body-bg);
@@ -144,7 +153,13 @@ main {
 
 
 
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 851px) {
+    .pictures {
+        max-width: 700px;
+        margin: auto;
+        width: 95%;
+    }
+
     .header {
         margin-left: var(--navbar-width);
     }
@@ -169,7 +184,11 @@ main {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
+    .pictures {
+        margin: auto;
+    }
+
     .navbar {
         bottom: 0;
         width: 100vw;

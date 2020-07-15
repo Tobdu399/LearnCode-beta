@@ -1,8 +1,16 @@
 let theme = true;
 let position = 0;
 
+function detectBrowser() {
+    let isChrome = navigator.userAgent.indexOf("Chrome");
+
+    if (isChrome === -1) {
+        location.replace("browser-not-supported.html");
+    }
+}
+
 function changeTheme() {
-    position = window.scrollY;
+    position = window.scrollY;  // Get current Y position
 
     if (theme) {
         theme = false;
