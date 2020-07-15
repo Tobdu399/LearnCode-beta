@@ -26,7 +26,7 @@ function changeTheme() {
         document.documentElement.style.setProperty('--bg-secondary', '#141418');
         document.documentElement.style.setProperty('--text-primary', '#b6b6b6');
         document.documentElement.style.setProperty('--primary-color', '#5894ff');
-        document.documentElement.style.setProperty('--text-color', '#b6b6b6');
+        document.documentElement.style.setProperty('--text-color', '#ececec');
         document.documentElement.style.setProperty('--body-bg', '#313140');
         document.getElementById("theme-name").innerHTML = "Dark Theme";
 
