@@ -5,7 +5,7 @@
     font-size: 16px;
     font-family: 'Open Sans', 'sans-serif';
     --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
+    --text-secondary: rgba(236, 236, 236);
     --bg-primary: #23232e;
     --bg-secondary: #141418;
     --navbar-width: 5rem;
@@ -13,6 +13,7 @@
     --primary-color: #5894ff;
     --text-color: #ececec;
     --body-bg: #313140;
+    --shadow-color: rgba(94,67,94,1);
 }
 
 * {
@@ -25,10 +26,11 @@
     width: 100%;
     border-radius: 5px;
 
-    box-shadow: 3px 3px 5px 3px rgba(191,172,191,1);
+    box-shadow: 3px 3px 5px 3px var(--shadow-color);
 }
 
 body {
+    transition: calc(var(--transition-speed)*1.5) ease 0s;
     color: var(--text-color);
     background-color: var(--body-bg);
     margin: 0;
@@ -44,12 +46,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #23232e;
+    background: rgba(35, 35, 46, 0.7);
+    border-radius: 1rem;
 }
 
 .header {
     text-align: center;
-    background-image: linear-gradient(to bottom, rgba(11, 11, 26, 0.74), rgba(49, 49, 64, 0.74)), url("background.jpg");
+    background-image: linear-gradient(to bottom, rgba(11, 11, 26, 0.74), rgba(49, 49, 64, 0.74)), url("Pictures/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 4px var(--bg-primary) solid;
@@ -73,6 +76,11 @@ body::-webkit-scrollbar-thumb {
 main {
     margin-left: var(--navbar-width);
     padding: 1rem;
+}
+
+main div {
+    margin: auto;
+    max-width: 1000px;
 }
 
 #logo {
@@ -151,7 +159,29 @@ main {
     transition: var(--transition-speed);
 }
 
+.footer {
+    width: 100%;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    padding-top: var(--navbar-width);
+    padding-bottom: calc(var(--navbar-width)*1.5);
+}
 
+.footer a {
+    font-family: 'Roboto Mono', 'sans-serif';
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 0.1rem;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid var(--text-color);
+    border-radius: 0.1rem;
+    transition: padding-bottom var(--transition-speed) ease-in-out;
+}
+
+.footer a:hover {
+    padding-bottom: 0.4rem;
+}
 
 @media only screen and (min-width: 851px) {
     .pictures {

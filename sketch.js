@@ -20,6 +20,7 @@ function changeTheme() {
         document.documentElement.style.setProperty('--primary-color', '#3a64c9');
         document.documentElement.style.setProperty('--text-color', '#000000');
         document.documentElement.style.setProperty('--body-bg', '#eeeeee');
+        document.documentElement.style.setProperty('--shadow-color', 'rgba(191,172,191,1)');
         document.getElementById("theme-name").innerHTML = "Light Theme";
 
         // Timeout to wait for the theme to change
@@ -36,6 +37,7 @@ function changeTheme() {
         document.documentElement.style.setProperty('--primary-color', '#5894ff');
         document.documentElement.style.setProperty('--text-color', '#ececec');
         document.documentElement.style.setProperty('--body-bg', '#313140');
+        document.documentElement.style.setProperty('--shadow-color', 'rgba(94,67,94,1)');
         document.getElementById("theme-name").innerHTML = "Dark Theme";
 
         // Timeout to wait for the theme to change
@@ -43,6 +45,6 @@ function changeTheme() {
             if (position > 0) {
                 window.scrollTo(0, position);
             }
-        }, 10);
+        }, 1);
     }
 }
