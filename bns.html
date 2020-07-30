@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LearnCode | Browser Not Supported</title>
+    <link rel="icon" href="Pictures/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>
+    function chd() {
+        window.location.replace("https://www.google.com/intl/en_en/chrome/");
+    }
+</script>
+
+<style>
+    @media only screen and (min-width: 900px) {
+        #error-msg h2 {
+            text-align: center;
+        }
+    }
+
+    .container {
+        width: 80%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .pictures {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .pictures img {
+        width: 15%;
+        max-width: 150px;
+    }
+
+    #error-msg h2 {
+        font-family: 'Open Sans', 'sans-serif';
+        letter-spacing: 0.1ch;
+        font-weight: 400;
+        margin: auto;
+    }
+
+    #error-msg h2 button {
+        margin-top: 2rem;
+        padding: 15px 10px;
+        font-size: 0.9rem;
+        background-color: #44a4ff;
+        color: #ffffff;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        outline: none;
+
+        transition: 0.2s ease-in-out;
+    }
+
+    #error-msg h2 button:hover {
+        border-radius: 8px;
+        background-color: #1674d0;
+    }
+</style>
+
+<body>
+
+<div id="error-msg">
+    <div class="container">
+        <div class="pictures">
+            <img src="Pictures/error.png">
+        </div>
+
+        <h2>
+            Sorry, but we don't support your browser! Please use Google Chrome instead<br>
+            <button onclick="chd()">Download Chrome</button>
+        </h2>
+    </div>
+</div>
+
+</body>
+</html>

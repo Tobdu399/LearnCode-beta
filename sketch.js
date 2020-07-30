@@ -5,7 +5,7 @@ function detectBrowser() {
     let isChrome = navigator.userAgent.indexOf("Chrome");
 
     if (isChrome === -1) {
-        location.replace("browser-not-supported.html");
+        location.replace("bns.html");
     }
 }
 
