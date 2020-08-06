@@ -1,0 +1,27 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans', 'sans-serif';
+    --text-primary: #b6b6b6;
+    --text-secondary: rgba(236, 236, 236);
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --navbar-width: 5rem;
+    --transition-speed: 200ms;
+    --primary-color: #3a64c9;
+    --text-color: #ececec;
+    --body-bg: #313140;
+    --shadow-color: rgba(94,67,94,1);
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--text-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(35, 35, 46, 0.7);
+    border-radius: 1rem;
+}
