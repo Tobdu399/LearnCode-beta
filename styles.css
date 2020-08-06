@@ -173,7 +173,7 @@ main div {
     text-decoration: none;
     cursor: pointer;
     padding-bottom: 0.1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-bottom: 0.1rem solid var(--text-color);
     border-radius: 0.1rem;
     transition: padding-bottom var(--transition-speed) ease-in-out;
