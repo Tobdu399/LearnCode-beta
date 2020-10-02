@@ -25,6 +25,10 @@ main {
     border-radius: 0.5rem;
 }
 
+#privacy-note {
+    color: gray;
+}
+
 #note {
     padding-top: 5rem;
     padding-bottom: 1rem;
